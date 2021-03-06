@@ -1,63 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/null.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Roboto&display=swap" rel="stylesheet">
-    <title>Title</title>
+    <title>CV</title>
 </head>
 <body>
 
     <header class="header">
         <div class="container">
-            <div class="hader-content">
-                <div><img src="./img/chelovek.png" alt="not img"></div>
-                <div>
-                    <h1 class="hader-text">Omarow Arsen</h1>
-                    <h2 class="hader-text">Front-end Developer</h2>
+            <div class="wrapper__header-content">
+                <div class="header-content">
+                    <div class="header__wrapper-img"><img class="avatar" src="./img/spider.jpg" alt="no img"></div>
+                    <div>
+                        <h1 class="header-text yellow">Omarov Arsen</h1>
+                        <h2 class="header-text blue">Front-end Developer</h2>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
     <main class="main">
-        <div class="container">
-            <section class="text">
-                <p class="text-content">At the moment, I have already mastered the layout, the basics of JavaScript.
-                    I worked with Photoshop, figma, VS Code, WebStorm, have mastered HTML5, CSS3, git, GitHub. 
-                    Previously worked with C, C++, Pascal, Delphy, SQL, 1C.
-                </p>          
-                <p class="text-content">I want to become a professional web developer. 
-                    I worked in the field of trade (sociable) and industrial software development, 
-                    within a month I was entrusted with my own projects. 
-                    Responsible, cold-blooded, stress-resistant, responsive, quick-witted, 
+        <div class="container main">
+            <section>
+                <p class="title-text">Skills:</p>
+                <div class="flex-container text-content paragraph">
+                    <div class="text-content">JavaScript</div>
+                    <div class="text-content">Photoshop</div>
+                    <div class="text-content">Figma</div>
+                    <div class="text-content">VS Code</div>
+                    <div class="text-content">WebStorm</div>
+                    <div class="text-content">HTML5</div>
+                    <div class="text-content">CSS3</div>
+                    <div class="text-content">git</div>
+                    <div class="text-content">GitHub</div>
+                    <div class="text-content">C</div>
+                    <div class="text-content">C++</div>
+                    <div class="text-content">Pascal</div>
+                    <div class="text-content">Delphy</div>
+                    <div class="text-content">SQL</div>
+                    <div class="text-content">1C</div>
+                </div>
+                <p class="title-text">About Me:</p>
+                <p class="text-content paragraph">I want to become a professional web developer.
+                    I worked in the field of trade (sociable) and industrial software development,
+                    within a month I was entrusted with my own projects.
+                    Responsible, cold-blooded, stress-resistant, responsive, quick-witted,
                     quickly assimilate new information in practice, not afraid to experiment and offer new solutions.
                 </p>
-            </section>
-            <section class="education">
-                <p class="text-content">
+                <p class="title-text">Education:</p>
+                <p class="text-content paragraph">
                     I have a master’s degree in “Control in technical systems”.
                 </p>
-                <p class="text-content">
-                    I am engaged in self-education, take free courses and read online textbooks.
+                <p class="text-content paragraph">
+                    I am engaged in self-education, take free courses and read online textbooks. I'm taking an RS School course.
                 </p>
+                <p class="title-text">English:</p>
+                <p class="text-content paragraph">I have level A2 in English.</p>
+                <p class="title-text">Example code: </p>
+                <pre class="text-content">
+                    <code>function __webpack_require__(moduleId) {
+
+                            if(installedModules[moduleId]) {
+                                return installedModules[moduleId].exports;
+                            }
+                            var module = installedModules[moduleId] = {
+                                i: moduleId,
+                                l: false,
+                                exports: {}
+                            };
+
+                            modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+
+                            module.l = true;
+
+                            return module.exports;
+                        }</code>
+                </pre>
+
             </section>
         </div>
-        
+
     </main>
 
     <footer class="footer">
         <div class="container">
             <div class="footer__contacts">
-                <div class="footer__contacts-content">
-                    <div class="footer__contacts-item">Email: <a class="link"  href="mailto:omarowarr@yandex.ru">omarowarr@yandex.ru</a></div>
-                    <div class="footer__contacts-item">My phone is <a class="link"  href="tel:+79377425399"> +7-937-742-53-99</a></div>
-                    <div class="footer__contacts-item">GitHub<a class="link" href="https://github.com/Ars-N">  https://github.com/Ars-N</a></div>
-                </div>
+                <ul class="flex-container">
+                    <li class="footer__contacts-item">Email: <a class="link"  href="mailto:omarowarr@yandex.ru">omarowarr@yandex.ru</a></li>
+                    <li class="footer__contacts-item">My phone is <a class="link"  href="tel:+79377425399"> +7-937-742-53-99</a></li>
+                    <li class="footer__contacts-item">GitHub<a class="link" href="https://github.com/Ars-N">  https://github.com/Ars-N</a></li>
+                    <li class="footer__contacts-item">2021</li>
+                    <li class="footer__contacts-item"><a class="link"  href="https://rs.school/js/"> <img class="rss-logo" src="./img/rs_school_js.svg" alt="no img"></a></li>
+                    <li class="footer__contacts-item"><a class="link" href="#"><img class="rss-logo" src="./img/YouTube_full-color_icon_(2017).svg" alt="no img"></a></li>
+                </ul>
             </div>
-        </div>      
+        </div>
     </footer>
 
 </body>

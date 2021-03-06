@@ -1,41 +1,120 @@
 *{
-    font: size 16px;
+    font-size: 16px;
     font-family: 'Roboto', sans-serif; 
-}
-.text-content{
-    margin:30px 10px;
-}
-.header{
-   background-color: #292929;
-   color: #fff;
-   padding: 5px;
-}
-
-.hader-text{
-    font-size: 24px;
-    font-family: 'Cormorant Upright', serif;
 }
 .container{
     max-width: 1220px;
     margin: 0 auto;
 }
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header{
+    background-color: #07060C;
+    color: #fff;
+    padding: 10px 5px;
+}
+.wrapper__header-content{
+    display: inline-block;
+    width: 50%;
+}
+.header-content{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.header__wrapper-img{
+    box-shadow: 8px 6px 40px ;
+    border-radius: 20px;
+    border: 3px solid rgba(129, 124, 126, 0.60);
+}
+.avatar{
+    border-radius: 20px;
+}
+.header-text{
+    padding: 10px;
+    font-size: 24px;
+    font-family: 'Cormorant Upright', serif;
+}
+
+.yellow{
+    color:yellow;
+}
+.yellow:hover, .blue:hover{
+    box-shadow: 1px 2px 8px;
+    text-shadow: 3px 1px 10px #fff;
+}
+.blue{
+    color: #2783f3;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+.main{
+    background-size: 30%;
+    position: relative;
+    background-color: rgba(7, 6, 12, 0.3);
+}
+.main::after {
+    content: "";
+    background-size: 100%;
+    background-image: url('../img/SH2.jpg');
+    background-attachment:fixed ;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+.title-text{
+    padding: 30px 0 5px 10px;
+    color: white;
+    line-height: 1.5;
+}
+.text-content{
+    padding: 5px 20px 10px 5px;
+    color: white;
+    line-height: 1.5;
+    margin:0 30px 15px 30px;
+}
+.text-content:hover{
+    box-shadow: 2px 1px 10px yellow;
+}
+pre{
+    display: inline-block;
+    border-radius: 10px;
+    background-color: rgba(194, 191, 191, 0.97);
+}
+code{
+    padding-right: 30px;
+    color: #07060c;
+}
+
 .footer{
-    padding: 5px;
     width: 100%;
     color: #fff;
-    background-color: rgb(49, 45, 30);
-    position: absolute;
+    background-color: rgb(88, 76, 55);
     bottom: 0;
 }
-.footer__contacts-content{
-    display: flex;
-    justify-content: space-around;
-}
+
 .footer__contacts-item{
-    margin: 5px;
+    margin: 10px;
 }
 .link{
-    margin: 0px;
     color: yellow;
     text-shadow:2px 2px 2px rgb(141, 133, 59);
+}
+.rss-logo{
+    width: 100px;
+    height: 50px;
 }
